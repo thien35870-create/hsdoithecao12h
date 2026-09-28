@@ -1,0 +1,5 @@
+const demo=[["DEMO-001",100000],["DEMO-002",200000],["DEMO-003",50000],["DEMO-004",500000],["DEMO-005",100000],["DEMO-006",300000],["DEMO-007",200000],["DEMO-008",1000000],["DEMO-009",50000],["DEMO-010",150000],["DEMO-011",250000],["DEMO-012",400000]];
+function render(){const q=(document.getElementById("search").value||"").toLowerCase();document.getElementById("rows").innerHTML=demo.filter(x=>x[0].toLowerCase().includes(q)).map(x=>`<tr><td>${x[0]}</td><td>${x[1].toLocaleString("vi-VN")} VNĐ</td><td>${(x[1]*.85).toLocaleString("vi-VN")} VNĐ</td><td class="ok">Mẫu</td></tr>`).join("");document.getElementById("count").textContent=demo.length}
+function resetData(){document.getElementById("search").value="";render()}
+function saveRate(){document.getElementById("saved").textContent=" Đã lưu (chỉ giao diện demo)";setTimeout(()=>document.getElementById("saved").textContent="",1800)}
+render();

@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Demo</title><link rel="stylesheet" href="assets/style.css"></head>
+<body><main class="login-wrap"><div class="login card">
+<a class="brand" href="index.html">TheCao<span>Demo</span></a><p class="eyebrow">ADMIN DEMO</p><h1>Đăng nhập quản trị</h1>
+<p class="muted">Tài khoản mô phỏng, không kết nối máy chủ.</p>
+<label>Tài khoản<input id="u" value="admin_demo"></label><label>Mật khẩu<input id="p" type="password" placeholder="demo_password"></label>
+<button onclick="login()">Đăng nhập</button><p id="err" class="error"></p><p class="note">Demo: admin_demo / demo_password</p></div></main>
+<script>function login(){if(document.getElementById('u').value==='admin_demo'&&document.getElementById('p').value==='demo_password'){location.href='dashboard.html'}else{document.getElementById('err').textContent='Sai tài khoản demo.'}}</script>
+</body></html>

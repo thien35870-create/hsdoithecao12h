@@ -1,0 +1,1 @@
+function calc(){const v=Math.max(0,Number(document.getElementById("value").value||0));document.getElementById("result").textContent=(v*.85).toLocaleString("vi-VN")+" VNĐ"}
